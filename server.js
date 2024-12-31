@@ -10,7 +10,7 @@ const usuarios = [
 ];
 app.post('/usuarios', (req, res) => {
 console.log('POST /usuarios');
-res.send('Ok');
+res.send('Ok Post Deu Certo');
 });
 
 
