@@ -11,15 +11,12 @@ const usuarios = [
 ];
 app.post('/usuarios', (req, res) => {
   res.send('Ok Post Deu Certo');
-console.log('POST /usuarios');
-res.send('Ok Post Deu Certo');
+  console.log('POST /usuarios');
+  res.send('Ok Post Deu Certo');
 });
-
-
-
-
 app.get('/usuarios', (req, res) => {
-  res.json(usrs);
+ // res.send('Ok Get Deu Certo');
+ res.status(200).json(users);
 });
 app.listen(3000, () => {
   console.log('Servidor rodando na porta 3000');
